@@ -1,0 +1,28 @@
+@import "/src/colours.scss";
+
+a {
+  text-decoration: none;
+}
+
+.NavbarLink-div {
+  font-size: 40px;
+  color: $primary-color;
+  transition: 0.3s;
+}
+
+.NavbarLink-div:hover {
+  color: $secondary-color;
+  transition: 0.3s;
+}
+
+.NavbarLink-active {
+  font-size: 40px;
+  color: $secondary-color;
+  transition: 0.3s;
+}
+
+.NavbarLink-active:hover {
+  font-size: 40px;
+  color: $secondary-color;
+  transition: 0.3s;
+}

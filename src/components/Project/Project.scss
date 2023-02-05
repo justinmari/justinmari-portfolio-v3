@@ -1,0 +1,44 @@
+@import "/src/colours.scss";
+
+.Project {
+  border: 1px solid $secondary-background-color;
+  border-radius: 10px;
+  width: 40vw;
+  height: fit-content;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.Project:hover {
+  scale: 1.02;
+  transition: 0.3s;
+}
+
+.Project-wrapper {
+  padding: 20px;
+}
+
+.Project-top-content {
+  display: flex;
+}
+
+.Project-img {
+  height: auto;
+  width: 10%;
+  border-radius: 10px;
+}
+
+.Project-title {
+  width: 90%;
+  align-self: center;
+  user-select: none;
+}
+
+.Project-description {
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 70%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0 0 0;
+}

@@ -1,0 +1,9 @@
+@import "/src/colours.scss";
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 100px;
+}

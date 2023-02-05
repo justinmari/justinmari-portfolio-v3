@@ -1,0 +1,13 @@
+@import '/src/colours.scss';
+
+.App {
+  background-color: $background-color;
+}
+
+.App-div {
+  min-height: 100vh;
+}
+
+.App-page {
+  text-align: center;
+}
