@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import HomePage from './pages/HomePage/HomePage';
 import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
+import ResumePage from './pages/ResumePage/ResumePage';
 
 function App(props) {
   return (
@@ -19,6 +20,7 @@ function App(props) {
             <Route exact path='/about' element={<AboutPage />}></Route>
             <Route exact path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
             <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
+            <Route exact path='/resume' element={<ResumePage professionalExperiences={props.professionalExperiences} />}></Route>
           </Routes>
         </div>
       </div>

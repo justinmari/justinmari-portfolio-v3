@@ -19,7 +19,7 @@ function Project(props) {
     const numberOfLanguages = props.programmingLanguages.length;
     let languages = '';
     for (let i = 0; i < numberOfLanguages; i++) {
-      languages += props.programmingLanguages[i] + (i === numberOfLanguages-1 ? '' : ',');
+      languages += props.programmingLanguages[i] + (i === numberOfLanguages-1 ? '' : ', ');
     }
     return languages;
   }
