@@ -4,13 +4,13 @@ a {
   text-decoration: none;
 }
 
-.NavbarLink-div {
+.NavbarLink-inactive {
   font-size: 40px;
   color: $primary-color;
   transition: 0.3s;
 }
 
-.NavbarLink-div:hover {
+.NavbarLink-inactive:hover {
   color: $selected-color;
   transition: 0.3s;
 }
@@ -23,6 +23,6 @@ a {
 
 .NavbarLink-active:hover {
   font-size: 40px;
-  color: $selected-color;
+  color: $white;
   transition: 0.3s;
 }

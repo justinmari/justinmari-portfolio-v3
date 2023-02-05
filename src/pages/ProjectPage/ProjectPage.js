@@ -65,7 +65,7 @@ function ProjectPage({ projects }) {
         </div>
         <div className='ProjectPage-date'>
           <h6>Date</h6>
-          <p>{project.date}</p>
+          <p>{project.startDate} - {project.endDate ? project.endDate : 'Present'}</p>
         </div>
       </div>
 

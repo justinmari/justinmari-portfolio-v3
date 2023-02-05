@@ -13,7 +13,7 @@ class NavbarLink extends Component {
       <div className='NavbarLink'>
         <NavLink
           className={({ isActive }) =>
-            isActive ? 'NavbarLink-active' : 'NavbarLink-div'
+            isActive ? 'NavbarLink-active' : 'NavbarLink-inactive'
           }
           to={this.props.path}>
           <div>{this.props.title}</div>
