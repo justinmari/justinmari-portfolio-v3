@@ -7,11 +7,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { loadData } from './helpers/dataHelper'
 
 loadData().then(data => {
+  console.log(data.projects);
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App data={data} />
+        <App projects={data.projects} />
       </BrowserRouter>
     </React.StrictMode>
   );

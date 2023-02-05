@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import './Project.scss';
 
-class Project extends Component {
-  static defaultProps = {
+function Project(props) {
+  Project.defaultProps = {
     id: 'noId',
     base64Image: '',
     title: 'default project title',
@@ -13,59 +13,49 @@ class Project extends Component {
     technologies: ['program1', 'library2', 'framework3'],
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      isClicked: false
-    }
-    this.handleClick = this.handleClick.bind(this);
-  }
+  const [isClicked, setIsClicked] = useState(false);
 
-  generateDescriptions() {
+  function generateDescriptions() {
     const descriptions = [];
-    for (let i = 0; i < this.props.descriptions.length; i++) {
+    for (let i = 0; i < props.descriptions.length; i++) {
       descriptions.push(<p key={uuidv4()}>{this.props.descriptions[i]}</p>);
     }
     return descriptions;
   }
 
-  generateLanguagesList() {
+  function generateLanguagesList() {
     const languages = [];
-    for (let i = 0; i < this.props.programmingLanguages.length; i++) {
+    for (let i = 0; i < props.programmingLanguages.length; i++) {
       languages.push(<li key={uuidv4()}>{this.props.programmingLanguages[i]}</li>);
     }
     return languages;
   }
 
-  generateTechnologiesList() {
+  function generateTechnologiesList() {
     const technologies = [];
-    for (let i = 0; i < this.props.technologies.length; i++) {
+    for (let i = 0; i < props.technologies.length; i++) {
       technologies.push(<li key={uuidv4()}>{this.props.technologies[i]}</li>);
     }
     return technologies;
   }
 
-  handleClick() {
-    this.setState(oldState => {
-      return {...oldState, isClicked: true}
-    });
+  function handleClick() {
+    setIsClicked(!isClicked);
   }
 
-  render() {
-    return (
-      <div className={'Project'} onClick={this.handleClick}>
-        <div className='Project-wrapper'>
-          <div className='Project-top-content'>
-            <img className='Project-img' src={this.props.base64Image} alt={this.props.title} />
-            <div className='Project-title'>
-              <h1>{this.props.title}</h1>
-            </div>
+  return (
+    <div className={'Project'} onClick={handleClick}>
+      <div className='Project-wrapper'>
+        <div className='Project-top-content'>
+          <img className='Project-img' src={props.base64Image} alt={props.title} />
+          <div className='Project-title'>
+            <h1>{props.title}</h1>
           </div>
         </div>
-        {this.state.isClicked && <Navigate to={`/project/${this.props.id}`} replace={true}/>}
       </div>
-    )
-  }
+      {isClicked && <Navigate to={`/project/${props.id}`} replace={true} />}
+    </div>
+  )
 };
 
 export default Project;

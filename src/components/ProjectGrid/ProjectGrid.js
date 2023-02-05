@@ -3,37 +3,35 @@ import Project from '../Project/Project';
 import './ProjectGrid.scss';
 import { v4 as uuidv4 } from 'uuid';
 
-class ProjectGrid extends Component {
-  static defaultProps = {
+function ProjectGrid(props) {
+  ProjectGrid.defaultProps = {
     projects: []
-  }
+  };
 
-  generateProjects() {
-    let projects = [];
-    for (let i = 0; i < this.props.projects.length; i++) {
-      projects.push(
+  function generateProjects() {
+    let projectsList = [];
+    for (let i = 0; i < props.projects.length; i++) {
+      projectsList.push(
         <Project
           key={uuidv4()}
-          id={this.props.projects[i].id}
-          base64Image={this.props.projects[i].base64Image}
-          title={this.props.projects[i].title}
-          descriptions={this.props.projects[i].descriptions}
-          programmingLanguages={this.props.projects[i].programmingLanguages}
-          technologies={this.props.projects[i].technologies}
+          id={props.projects[i].id}
+          base64Image={props.projects[i].base64Image}
+          title={props.projects[i].title}
+          descriptions={props.projects[i].descriptions}
+          programmingLanguages={props.projects[i].programmingLanguages}
+          technologies={props.projects[i].technologies}
           isOpen={false}
         />
       );
     }
-    return projects;
+    return projectsList;
   }
 
-  render() {
-    return (
-      <div className="ProjectGrid">
-        {this.generateProjects()}
-      </div>
-    )
-  }
+  return (
+    <div className="ProjectGrid">
+      {generateProjects()}
+    </div>
+  )
 };
 
 export default ProjectGrid;

@@ -2,18 +2,16 @@ import React, { Component } from 'react';
 import './ProjectsPage.scss';
 import ProjectGrid from '../../components/ProjectGrid/ProjectGrid';
 
-class ProjectsPage extends Component {
-  static defaultProps = {
+function ProjectsPage(props) {
+  ProjectsPage.defaultProps = {
     projects: []
   }
 
-  render() {
-    return (
-      <div className="ProjectsPage">
-        <ProjectGrid projects={this.props.projects}/>
-      </div>
-    )
-  }
+  return (
+    <div className="ProjectsPage">
+      <ProjectGrid projects={props.projects} />
+    </div>
+  )
 };
 
 export default ProjectsPage;
