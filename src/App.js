@@ -20,7 +20,7 @@ function App(props) {
             <Route exact path='/about' element={<AboutPage />}></Route>
             <Route exact path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
             <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
-            <Route exact path='/resume' element={<ResumePage professionalExperiences={props.professionalExperiences} />}></Route>
+            <Route exact path='/resume' element={<ResumePage resumeData={props.resumeData} />}></Route>
           </Routes>
         </div>
       </div>

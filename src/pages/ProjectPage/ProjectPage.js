@@ -30,12 +30,12 @@ function ProjectPage({ projects }) {
     return languages;
   }
 
-  function generateTechnologyList() {
-    const technologies = [];
-    for (let i = 0; i < project.technologies.length; i++) {
-      technologies.push(<p key={uuidv4()}>{project.technologies[i]}</p>);
+  function generateSkillsList() {
+    const skills = [];
+    for (let i = 0; i < project.skills.length; i++) {
+      skills.push(<p key={uuidv4()}>{project.skills[i]}</p>);
     }
-    return technologies;
+    return skills;
   }
 
   return (
@@ -60,8 +60,8 @@ function ProjectPage({ projects }) {
           {generateLanguageList()}
         </div>
         <div className='ProjectPage-technologies'>
-          <h6>Technologies</h6>
-          {generateTechnologyList()}
+          <h6>Skills</h6>
+          {generateSkillsList()}
         </div>
         <div className='ProjectPage-date'>
           <h6>Date</h6>

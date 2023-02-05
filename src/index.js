@@ -12,7 +12,7 @@ loadData().then(data => {
   root.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App projects={data.projects} />
+        <App projects={data.projects} resumeData={data.resumeData} />
       </BrowserRouter>
     </React.StrictMode>
   );

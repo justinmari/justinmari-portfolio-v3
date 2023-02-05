@@ -2,7 +2,10 @@ import axiosService from "./axiosService";
 
 function getResumeData() {
   return axiosService.get(`/api/resume`).then(result => {
-    return result.data;
+    return {
+      summary: result.data[0],
+      professionalExperiences: result.data[1]
+    };
   }).catch(error => {
     console.error("Error when fetching projects from backend.", error)
     return [];

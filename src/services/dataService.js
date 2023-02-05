@@ -1,10 +1,13 @@
 import { getProjects } from "./projectService";
+import { getResumeData } from "./resumeService";
 
 async function loadData() {
   const projects = await getProjects();
-  return Promise.all([projects]).then(data => {
+  const resumeData = await getResumeData();
+  return Promise.all([projects, resumeData]).then(data => {
     return {
-      projects: data[0]
+      projects: data[0],
+      resumeData: data[1]
     }
   });
 }

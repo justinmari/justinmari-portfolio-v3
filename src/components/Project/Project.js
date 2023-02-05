@@ -3,17 +3,6 @@ import Divider from '../Divider/Divider';
 import './Project.scss';
 
 function Project(props) {
-  Project.defaultProps = {
-    id: 'noId',
-    base64Image: '',
-    title: 'default project title',
-    startDate: '2000-02-03',
-    endDate: '2001-03-02',
-    descriptions: 'default project description',
-    programmingLanguages: ['J#', 'Python'],
-    technologies: ['program1', 'library2', 'framework3'],
-  }
-
   function generateLanguageList() {
   
     const numberOfLanguages = props.programmingLanguages.length;
