@@ -1,18 +1,12 @@
 @import "/src/colours.scss";
 
 .Project {
-  border: 1px solid $secondary-background-color;
+  border: 1px solid;
   border-radius: 10px;
   width: 40vw;
   height: fit-content;
   cursor: pointer;
   margin: 10px;
-  transition: 0.3s;
-}
-
-.Project:hover {
-  scale: 1.02;
-  transition: 0.3s;
 }
 
 .Project-wrapper {
@@ -25,14 +19,17 @@
 
 .Project-img {
   height: auto;
-  width: 10%;
+  width: 20%;
   border-radius: 10px;
 }
 
 .Project-title {
-  width: 90%;
+  width: 80%;
   align-self: center;
   user-select: none;
+  & h3 {
+    font-family: 'Kaushan Script', cursive;
+  }
 }
 
 .Project-description {

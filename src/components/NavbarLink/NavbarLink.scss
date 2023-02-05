@@ -11,18 +11,18 @@ a {
 }
 
 .NavbarLink-div:hover {
-  color: $secondary-color;
+  color: $selected-color;
   transition: 0.3s;
 }
 
 .NavbarLink-active {
   font-size: 40px;
-  color: $secondary-color;
+  color: $selected-color;
   transition: 0.3s;
 }
 
 .NavbarLink-active:hover {
   font-size: 40px;
-  color: $secondary-color;
+  color: $selected-color;
   transition: 0.3s;
 }

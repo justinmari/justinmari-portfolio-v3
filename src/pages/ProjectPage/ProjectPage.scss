@@ -1,1 +1,31 @@
 @import '/src/colours.scss';
+
+.ProjectPage {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  width: 95vw;
+  padding: 2rem;
+  color: $text-color;
+}
+
+.ProjectPage-img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.ProjectPage-title {
+  font-family: 'Kaushan Script', cursive;
+  color: $selected-color;
+  padding: 0.5rem;
+  & h1 {
+    font-size: 70px;
+  }
+}
+
+.ProjectPage-details {
+  display: flex;
+  justify-content: space-evenly;
+  & p {
+    margin: 0;
+  }
+}

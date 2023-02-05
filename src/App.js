@@ -15,10 +15,10 @@ function App(props) {
         <Navbar />
         <div className='App-page'>
           <Routes>
-            <Route path='/' element={<HomePage />}></Route>
-            <Route path='/about' element={<AboutPage />}></Route>
-            <Route path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
-            <Route path='/project/:id' element={<ProjectPage projects={props.projects} />}></Route>
+            <Route exact path='/' element={<HomePage />}></Route>
+            <Route exact path='/about' element={<AboutPage />}></Route>
+            <Route exact path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
+            <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
           </Routes>
         </div>
       </div>
