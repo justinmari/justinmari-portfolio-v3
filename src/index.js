@@ -4,7 +4,7 @@ import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { loadData } from './helpers/dataHelper'
+import { loadData } from './services/dataService'
 
 loadData().then(data => {
   console.log(data.projects);

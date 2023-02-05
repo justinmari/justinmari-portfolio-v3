@@ -1,4 +1,4 @@
-import { getProjects } from "./projectsHelper";
+import { getProjects } from "./projectService";
 
 async function loadData() {
   const projects = await getProjects();
