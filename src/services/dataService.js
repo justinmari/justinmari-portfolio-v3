@@ -1,15 +1,21 @@
 import { getProjects } from "./projectService";
 import { getResumeData } from "./resumeService";
+import { logoService } from "./logoService";
 
-async function loadData() {
-  const projects = await getProjects();
-  const resumeData = await getResumeData();
-  return Promise.all([projects, resumeData]).then(data => {
-    return {
-      projects: data[0],
-      resumeData: data[1]
-    }
-  });
+const dataService = {
+  loadData: async function loadData() {
+    let promises = [];
+    promises.push(await getProjects());
+    promises.push(await getResumeData());
+    promises.push(await logoService.getLogo());
+    return Promise.all(promises).then(data => {
+      return {
+        projects: data[0],
+        resumeData: data[1],
+        logoBase64Image: data[2]
+      }
+    });
+  }
 }
 
-export { loadData };
+export { dataService };

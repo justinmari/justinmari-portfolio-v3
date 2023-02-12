@@ -4,16 +4,32 @@ import './index.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { loadData } from './services/dataService'
+import { dataService } from './services/dataService';
 
-loadData().then(data => {
-  console.log(data.projects);
+
+init();
+
+async function init() {
+
+  const data = await loadData();
+
+  console.log(data);
+
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <BrowserRouter>
-        <App projects={data.projects} resumeData={data.resumeData} />
+        <App
+          projects={data.projects}
+          resumeData={data.resumeData}
+          logoBase64Image={data.logoBase64Image}
+        />
       </BrowserRouter>
     </React.StrictMode>
   );
-});
+}
+
+
+async function loadData() {
+  return await dataService.loadData();
+}

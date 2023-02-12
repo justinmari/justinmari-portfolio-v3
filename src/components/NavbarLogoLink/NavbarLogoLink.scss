@@ -1,0 +1,30 @@
+@import "/src/colours.scss";
+
+.NavbarLogoLink-inactive {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.NavbarLogoLink-inactive:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.NavbarLogoLink-active {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.NavbarLogoLink-active:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.NavbarLogoLink-logo {
+  max-height: 10vh;
+}
+
+.NavbarLogoLink {
+  text-align: center;
+  max-height: 100%;
+}

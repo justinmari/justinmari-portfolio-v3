@@ -12,19 +12,18 @@ import ResumePage from './pages/ResumePage/ResumePage';
 function App(props) {
   return (
     <div className="App">
-      <div className='App-div'>
-        <Navbar />
-        <div className='App-page'>
-          <Routes>
-            <Route exact path='/' element={<HomePage />}></Route>
-            <Route exact path='/about' element={<AboutPage />}></Route>
-            <Route exact path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
-            <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
-            <Route exact path='/resume' element={<ResumePage resumeData={props.resumeData} />}></Route>
-          </Routes>
-        </div>
+      <div className='App-page'>
+        <Routes>
+          <Route exact path='/' element={<HomePage />}></Route>
+          <Route exact path='/about' element={<AboutPage />}></Route>
+          <Route exact path='/projects' element={<ProjectsPage projects={props.projects} />}></Route>
+          <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
+          <Route exact path='/resume' element={<ResumePage resumeData={props.resumeData} />}></Route>
+        </Routes>
       </div>
-      {/* <Footer /> */}
+      <div className='App-navbar'>
+        <Navbar logoBase64Image={props.logoBase64Image}/>
+      </div>
     </div>
   )
 }

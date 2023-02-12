@@ -7,7 +7,7 @@ function getResumeData() {
       professionalExperiences: result.data[1]
     };
   }).catch(error => {
-    console.error("Error when fetching projects from backend.", error)
+    console.error("Error when fetching resume data from backend.", error)
     return [];
   });
 }
