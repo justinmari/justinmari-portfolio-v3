@@ -1,20 +1,23 @@
 @import "/src/colours.scss";
-
-.ProjectGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+@import "/src/global.scss";
 
 .ProjectGrid-project {
-  color: $text-primary-color;
-  border-color: $text-primary-color;
+  color: $project-grid-text-color;
   transition: 0.3s;
+
+  img {
+    filter: brightness(100%);
+    transition: 0.3s;
+  }
 }
 
 .ProjectGrid-project:hover {
-  color: $text-hover-color;
-  border-color: $text-hover-color;
+  color: $project-grid-text-hover-color;
   scale: 1.02;
   transition: 0.3s;
+
+  img {
+    filter: brightness(30%);
+    transition: 0.3s;
+  }
 }

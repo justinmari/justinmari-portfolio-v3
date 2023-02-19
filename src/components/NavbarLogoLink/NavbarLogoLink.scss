@@ -1,4 +1,5 @@
 @import "/src/colours.scss";
+@import "/src/global.scss";
 
 .NavbarLogoLink-inactive {
   opacity: 1;
@@ -21,7 +22,7 @@
 }
 
 .NavbarLogoLink-logo {
-  max-height: 10vh;
+  max-height: $logo-height;
 }
 
 .NavbarLogoLink {

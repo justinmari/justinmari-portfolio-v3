@@ -1,11 +1,12 @@
 @import "/src/colours.scss";
+@import "/src/global.scss";
 
 a {
   text-decoration: none;
 }
 
 .NavbarLink-inactive {
-  font-size: 40px;
+  font-size: $navbar-link-font-size;
   color: $navbar-link-inactive-color;
   transition: 0.3s;
 }
@@ -16,13 +17,12 @@ a {
 }
 
 .NavbarLink-active {
-  font-size: 40px;
+  font-size: $navbar-link-font-size;
   color: $navbar-link-active-color;
   transition: 0.3s;
 }
 
 .NavbarLink-active:hover {
-  font-size: 40px;
   color: $navbar-link-active-hover-color;
   transition: 0.3s;
 }

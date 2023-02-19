@@ -1,12 +1,13 @@
 @import "/src/colours.scss";
+@import "/src/global.scss";
 
 .Navbar {
   min-height: 100%;
-  max-height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: $navbar-color;
+  padding: $navbar-vertical-padding $navbar-side-padding;
 }
 
 .Navbar-left {

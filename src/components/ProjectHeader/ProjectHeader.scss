@@ -1,0 +1,36 @@
+@import "/src/colours.scss";
+
+.ProjectHeader {
+  text-align: center;
+
+  &.no-video {
+    h1 {
+      font-family: 'Kaushan Script', cursive;
+      color: $neutral-color-1;
+      font-size: 80px;
+    }
+  
+    img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      filter: brightness(95%);
+    }
+  }
+
+  &.has-video {
+    background-color: $neutral-color-1;
+
+    h1 {
+      font-family: 'Kaushan Script', cursive;
+      color: $neutral-color-7;
+      font-size: 80px;
+      padding-bottom: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 70vh;
+    }
+  }
+}

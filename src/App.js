@@ -12,7 +12,10 @@ import ResumePage from './pages/ResumePage/ResumePage';
 function App(props) {
   return (
     <div className="App">
-      <div className='App-page'>
+      <div className='App-navbar'>
+        <Navbar logoBase64Image={props.logoBase64Image}/>
+      </div>
+      <div className='App-page d-flex justify-content-center'>
         <Routes>
           <Route exact path='/' element={<HomePage />}></Route>
           <Route exact path='/about' element={<AboutPage />}></Route>
@@ -20,9 +23,6 @@ function App(props) {
           <Route exact path='/projects/:id' element={<ProjectPage projects={props.projects} />}></Route>
           <Route exact path='/resume' element={<ResumePage resumeData={props.resumeData} />}></Route>
         </Routes>
-      </div>
-      <div className='App-navbar'>
-        <Navbar logoBase64Image={props.logoBase64Image}/>
       </div>
     </div>
   )

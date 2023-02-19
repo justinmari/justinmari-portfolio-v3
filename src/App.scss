@@ -1,18 +1,17 @@
 @import '/src/colours.scss';
+@import '/src/global.scss';
 
 .App {
   background-color: $background-color;
   min-height: 100vh;
+  text-align: center;
 }
 
 .App-page {
-  text-align: center;
-  display: flex;
   min-height: 90vh;
   overflow-x: scroll;
-  padding: 0;
 }
 
 .App-navbar {
-  height: 10vh;
+  width: 100%;
 }

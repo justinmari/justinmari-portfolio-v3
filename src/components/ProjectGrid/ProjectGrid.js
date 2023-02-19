@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project/Project';
+import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectGrid.scss';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
@@ -19,8 +19,8 @@ function ProjectGrid(props) {
     let projectsList = [];
     for (let i = 0; i < props.projects.length; i++) {
       projectsList.push(
-        <div className='ProjectGrid-project' key={uuidv4()}>
-          <Project
+        <div className='ProjectGrid-project col-4' key={uuidv4()}>
+          <ProjectCard
             id={props.projects[i].id}
             base64Image={props.projects[i].base64Image}
             title={props.projects[i].title}
@@ -37,7 +37,7 @@ function ProjectGrid(props) {
   }
 
   return (
-    <div className="ProjectGrid">
+    <div className="ProjectGrid container-fluid row">
       {generateProjects()}
     </div>
   )

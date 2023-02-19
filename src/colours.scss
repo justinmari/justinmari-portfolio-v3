@@ -1,32 +1,44 @@
-$background-color: #7A5C61;
+$primary-color-1: #04534E;
+$primary-color-2: #07746E;
+$primary-color-3: #09A299;
+$primary-color-4: #0FC2B7;
+$primary-color-5: #08E1D4;
+$primary-color-6: #47FFF4;
+$primary-color-7: #7FFFF7;
+$primary-color-8: #A6FFFA;
+$primary-color-9: #C9FFFC;
+
+$neutral-color-1: #232B2A;
+$neutral-color-2: #3C4746;
+$neutral-color-3: #4D605F;
+$neutral-color-4: #66817F;
+$neutral-color-5: #819F9E;
+$neutral-color-6: #A7C2C0;
+$neutral-color-7: #CDE5E3;
+$neutral-color-8: #E3F4F3;
+$neutral-color-9: #FFFFFF;
+
+$error-color-1: #FF3B2E;
+$error-color-2: #FB7C74;
+$error-color-3: #F7B8B4;
+
+$transparent: rgba(255, 255, 255, 0);
+
+$background-color: $neutral-color-8;
 
 $text-primary-color: #000000;
 $text-hover-color: #DC9E82;
 
+$project-grid-text-color: $transparent;
+$project-grid-text-hover-color: $neutral-color-9;
+
 $section-border-color: #000000;
-$project-border-color: #000000;
-$project-border-hover-color: #D9BCA9;
 
 $text-color: #F2F3D9;
 
-
-$navbar-color: #D9BCA9;
-$navbar-link-inactive-color: #000000;
-$navbar-link-hover-color: #FFFFFF;
-$navbar-link-active-color: #C16E70;
-$navbar-link-active-hover-color: #FFFFFF;
-
-// $background-color: #1B1B1E;
-// $text-primary-color: #12EAEA;
-// $text-hover-color: #D62246;
-// $section-border-color: #12EAEA;
-// $text-color: #A0F8F8;
-
-$light-background-color: #E0C1B3;
-$light-primary-color: #4A314D;
-$light-secondary-background-color: #4B1D3F;
-$light-secondary-color: #D62246;
-
-$white: #FFFFFF;
-$black: #000000;
+$navbar-color: $primary-color-1;
+$navbar-link-inactive-color: $primary-color-9;
+$navbar-link-hover-color: $primary-color-4;
+$navbar-link-active-color: $primary-color-5;
+$navbar-link-active-hover-color: $primary-color-4;
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ProjectsPage.scss';
-import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel';
+import ProjectGrid from '../../components/ProjectGrid/ProjectGrid';
 
 function ProjectsPage(props) {
   ProjectsPage.defaultProps = {
@@ -9,7 +9,7 @@ function ProjectsPage(props) {
 
   return (
     <div className="ProjectsPage">
-      <ProjectCarousel projects={props.projects} />
+      <ProjectGrid projects={props.projects} />
     </div>
   )
 };
