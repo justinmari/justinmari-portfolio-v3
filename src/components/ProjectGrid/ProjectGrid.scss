@@ -7,14 +7,14 @@
 }
 
 .ProjectGrid-project {
-  color: $primary-color;
-  border-color: $primary-color;
+  color: $text-primary-color;
+  border-color: $text-primary-color;
   transition: 0.3s;
 }
 
 .ProjectGrid-project:hover {
-  color: $selected-color;
-  border-color: $selected-color;
+  color: $text-hover-color;
+  border-color: $text-hover-color;
   scale: 1.02;
   transition: 0.3s;
 }

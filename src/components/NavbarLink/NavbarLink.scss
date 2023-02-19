@@ -6,23 +6,23 @@ a {
 
 .NavbarLink-inactive {
   font-size: 40px;
-  color: $primary-color;
+  color: $navbar-link-inactive-color;
   transition: 0.3s;
 }
 
 .NavbarLink-inactive:hover {
-  color: $selected-color;
+  color: $navbar-link-hover-color;
   transition: 0.3s;
 }
 
 .NavbarLink-active {
   font-size: 40px;
-  color: $selected-color;
+  color: $navbar-link-active-color;
   transition: 0.3s;
 }
 
 .NavbarLink-active:hover {
   font-size: 40px;
-  color: $white;
+  color: $navbar-link-active-hover-color;
   transition: 0.3s;
 }

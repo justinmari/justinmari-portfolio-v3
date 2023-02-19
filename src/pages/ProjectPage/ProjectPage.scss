@@ -1,7 +1,7 @@
 @import '/src/colours.scss';
 
 .ProjectPage {
-  border: 1px solid $border-color;
+  border: 1px solid $section-border-color;
   border-radius: 10px;
   width: 95vw;
   padding: 2rem;
@@ -15,7 +15,7 @@
 
 .ProjectPage-title {
   font-family: 'Kaushan Script', cursive;
-  color: $selected-color;
+  color: $text-hover-color;
   padding: 0.5rem;
   & h1 {
     font-size: 70px;

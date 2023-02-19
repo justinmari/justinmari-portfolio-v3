@@ -18,8 +18,8 @@ function ProjectCarouselProject(props) {
   }
 
   return (
-    <div className={'ProjectCarouselProject'} onClick={handleClick}>
-      <div className='ProjectCarouselProject-top-content'>
+    <div className='ProjectCarouselProject' onClick={handleClick}>
+      <div className='ProjectCarouselProject-content'>
         <img className='ProjectCarouselProject-img' src={props.base64Image} alt={props.title} />
         <div className='ProjectCarouselProject-title'>
           <h3>{props.title}</h3>
