@@ -1,0 +1,25 @@
+@import '/src/colours.scss';
+@import '/src/global.scss';
+
+.HeroSection {
+  min-height: 800px;
+  background-image: $hero-background-image;
+  padding: 2rem 10rem 2rem 5rem;
+}
+
+.HeroSection hr {
+  border: none;
+  background-color: $hero-hr-color;
+  height: 8px;
+  opacity: 0.5;
+}
+
+.HeroSection-name {
+  font-size: 10rem;
+  color: $hero-name-color;
+}
+
+.HeroSection-occupation {
+  font-size: 3rem;
+  color: $hero-occupation-color;
+}

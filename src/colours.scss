@@ -1,12 +1,12 @@
-$primary-color-1: #04534E;
-$primary-color-2: #07746E;
-$primary-color-3: #09A299;
-$primary-color-4: #0FC2B7;
-$primary-color-5: #08E1D4;
-$primary-color-6: #47FFF4;
-$primary-color-7: #7FFFF7;
-$primary-color-8: #A6FFFA;
-$primary-color-9: #C9FFFC;
+$primary-color-1: #03030Fff;
+$primary-color-2: #12192Bff;
+$primary-color-3: #1C2437ff;
+$primary-color-4: #323A4Fff;
+$primary-color-5: #5B667Fff;
+$primary-color-6: #7A8599ff;
+$primary-color-7: #9298A6ff;
+$primary-color-8: #B4B8C1ff;
+$primary-color-9: #CCCDD1ff;
 
 $neutral-color-1: #232B2A;
 $neutral-color-2: #3C4746;
@@ -24,7 +24,12 @@ $error-color-3: #F7B8B4;
 
 $transparent: rgba(255, 255, 255, 0);
 
-$background-color: $neutral-color-8;
+$background-color: $primary-color-1;
+
+$hero-name-color: $neutral-color-8;
+$hero-occupation-color: $neutral-color-7;
+$hero-hr-color: $neutral-color-7;
+
 
 $text-primary-color: #000000;
 $text-hover-color: #DC9E82;
